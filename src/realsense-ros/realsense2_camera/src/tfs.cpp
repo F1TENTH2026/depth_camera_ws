@@ -42,7 +42,7 @@ void BaseRealSenseNode::append_static_tf_msg(const rclcpp::Time& t,
                                           const std::string& from,
                                           const std::string& to)
 {
-    geometry_msgs::msg::TransfoeomrmStamped msg;
+    geometry_msgs::msg::TransformStamped msg;
     msg.header.stamp = t;
     msg.header.frame_id = from;
     msg.child_frame_id = to;
